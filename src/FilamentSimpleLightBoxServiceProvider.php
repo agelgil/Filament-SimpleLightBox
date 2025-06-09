@@ -43,7 +43,7 @@ class FilamentSimpleLightBoxServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'solutionforest/filament-simplelightbox';
+        return 'agelgil/filament-lightbox';
     }
 
     /**
@@ -52,7 +52,7 @@ class FilamentSimpleLightBoxServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            Js::make('filament-simplelightbox-scripts', __DIR__ . '/../resources/dist/filament-simplelightbox.js'),
+            Js::make('filament-lightbox-scripts', __DIR__ . '/../resources/dist/filament-simplelightbox.js'),
         ];
     }
 }

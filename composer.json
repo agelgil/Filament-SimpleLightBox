@@ -1,15 +1,15 @@
 {
-    "name": "solution-forest/filament-simplelightbox",
-    "description": "This is my package filament-simplelightbox",
+    "name": "agelgil/filament-lightbox",
+    "description": "A simple lightbox for Filament",
     "keywords": [
-        "SolutionForest",
         "laravel",
-        "filament-simplelightbox"
+        "filament",
+        "filament-lightbox"
     ],
-    "homepage": "https://github.com/solutionforest/filament-simplelightbox",
+    "homepage": "https://github.com/agelgil/filament-lightbox",
     "support": {
-        "issues": "https://github.com/solutionforest/filament-simplelightbox/issues",
-        "source": "https://github.com/solutionforest/filament-simplelightbox"
+        "issues": "https://github.com/agelgil/filament-lightbox/issues",
+        "source": "https://github.com/agelgil/filament-lightbox"
     },
     "license": "MIT",
     "authors": [
@@ -39,6 +39,9 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "spatie/laravel-ray": "^1.26"
+    },
+    "conflict": {
+        "solution-forest/filament-simplelightbox": "*"
     },
     "autoload": {
         "psr-4": {
