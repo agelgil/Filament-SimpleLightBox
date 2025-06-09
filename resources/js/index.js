@@ -53,6 +53,7 @@ window.SimpleLightBox = {
     open(e, url) {
         e.preventDefault();
         const lightbox = new FsLightbox();
+        lightbox.props.type = "image";
         if (url !== undefined) {
             if (url !== this.getViewerURL(url)) {
                 this.createIframe(url);
@@ -67,7 +68,7 @@ window.SimpleLightBox = {
 
         // Multiple images
         let multipleURL = this.getMultipleImgURL(e.target);
-        if (multipleURL != null && multipleURL.length > 0) {
+        if (multipleURL != null && multipleURL.length > 1) {
             lightbox.props.sources = multipleURL;
             lightbox.open();
             return;
